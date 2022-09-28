@@ -1,16 +1,17 @@
 import React from "react"
-import { render } from "@testing-library/react"
+import { render, screen } from "@testing-library/react"
 import Home from "./Home"
 import { BrowserRouter } from 'react-router-dom'
 
 describe("<Home />", () => {
   it("renders without crashing", () => {
-    const div = document.createElement("div")
+
     render(
       <BrowserRouter>
           <Home />
       </BrowserRouter>,
-      div
+
   )
+  expect(screen.getByRole('heading', 'Welcome to Apartment App')).toBeInTheDocument()
   })
 })
