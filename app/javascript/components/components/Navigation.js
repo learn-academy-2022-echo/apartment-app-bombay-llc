@@ -1,5 +1,5 @@
 import React from "react"
-import { Nav, NavItem } from "reactstrap"
+import { Nav, NavItem, Button} from "reactstrap"
 import { NavLink } from "react-router-dom"
 
 const Navigation = ({
@@ -14,55 +14,55 @@ const Navigation = ({
       <Nav>
         <NavItem>
           <NavLink to="/" className="nav-link">
-            Home
+            <Button>Home</Button>
           </NavLink>
         </NavItem>
         {logged_in && (
           <NavItem>
             <a href={sign_out_route} className="nav-link">
-              Sign Out
+              <Button>Sign Out</Button>
             </a>
           </NavItem>
         )}
         {!logged_in && (
           <NavItem>
             <a href={sign_in_route} className="nav-link">
-              Sign In
+              <Button>Sign In</Button>
             </a>
           </NavItem>
         )}
         {!logged_in && (
           <NavItem>
             <a href={new_user_route} className="nav-link">
-              Sign Up
+            <Button>Sign Up</Button>
             </a>
           </NavItem>
         )}
         {logged_in && (
           <NavItem>
             <NavLink to="/apartmentshow" className="nav-link">
-              My Apartments
+            <Button>My Apartments</Button>
             </NavLink>
           </NavItem>
         )}
         {logged_in && (
           <NavItem>
             <NavLink to="/apartmentnew" className="nav-link">
-            Add Property
+            <Button>Add Property</Button>
             </NavLink>
           </NavItem>
         )}
         {logged_in && (
           <NavItem>
             <NavLink to="/apartmentindex" className="nav-link">
-            All listings
+            <Button>All listings</Button>
             </NavLink>
           </NavItem>
         )}
         {!logged_in && (
           <NavItem>
             <NavLink to="/apartmentindex" className="nav-link">
-            All Listings
+            <Button>All Listings</Button>
             </NavLink>
           </NavItem>
         )}
