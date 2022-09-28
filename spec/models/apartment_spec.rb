@@ -68,7 +68,7 @@ RSpec.describe Apartment, type: :model do
       street: 'Alkire St', 
       city: 'London',
       state: 'England', 
-      manager: 'Ms. Hudson'
+      manager: 'Ms. Hudson',
       price: '1000', 
       bedrooms: 2, 
       bathrooms: 2, 
@@ -83,7 +83,7 @@ RSpec.describe Apartment, type: :model do
       street: 'Alkire St', 
       city: 'London',
       state: 'England', 
-      manager: 'Ms. Hudson'
+      manager: 'Ms. Hudson',
       email: 'mzhudson@gmail.com', 
       bedrooms: 2, 
       bathrooms: 2, 
@@ -98,7 +98,7 @@ RSpec.describe Apartment, type: :model do
       street: 'Alkire St', 
       city: 'London',
       state: 'England', 
-      manager: 'Ms. Hudson'
+      manager: 'Ms. Hudson',
       email: 'mzhudson@gmail.com', 
       price: '1000', 
       bathrooms: 2, 
@@ -113,7 +113,7 @@ RSpec.describe Apartment, type: :model do
       street: 'Alkire St', 
       city: 'London',
       state: 'England', 
-      manager: 'Ms. Hudson'
+      manager: 'Ms. Hudson',
       email: 'mzhudson@gmail.com', 
       price: '1000', 
       bedrooms: 2, 
@@ -128,7 +128,7 @@ RSpec.describe Apartment, type: :model do
       street: 'Alkire St', 
       city: 'London',
       state: 'England', 
-      manager: 'Ms. Hudson'
+      manager: 'Ms. Hudson',
       email: 'mzhudson@gmail.com', 
       price: '1000', 
       bedrooms: 2, 
@@ -143,7 +143,7 @@ RSpec.describe Apartment, type: :model do
       street: 'Alkire St', 
       city: 'London',
       state: 'England', 
-      manager: 'Ms. Hudson'
+      manager: 'Ms. Hudson',
       email: 'mzhudson@gmail.com', 
       price: '1000', 
       bedrooms: 2, 
