@@ -6,9 +6,11 @@ const ApartmentIndex = ({apartments}) => {
 
     return (
     <div>
+      
     <h1>All Apartments</h1>
     {apartments?.map((apartment, index) => {
       return (
+        console.log(apartments),
       <Card style={{width: '18rem'}} key={index}>
       <img alt="Unit Image" src={apartment.image}/>
         <CardBody>
