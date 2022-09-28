@@ -38,6 +38,34 @@ const Navigation = ({
             </a>
           </NavItem>
         )}
+        {logged_in && (
+          <NavItem>
+            <a href="/apartmentshow" className="nav-link">
+              My Apartments
+            </a>
+          </NavItem>
+        )}
+        {logged_in && (
+            <NavItem>
+          <a href="/apartmentnew" className="nav-link">
+            Add Property
+          </a>
+          </NavItem>
+        )}
+        {logged_in && (
+            <NavItem>
+          <a href="/apartmentindex" className="nav-link">
+            All listings
+          </a>
+          </NavItem>
+        )}
+        {!logged_in && (
+            <NavItem>
+          <a href="/apartmentindex" className="nav-link">
+            All Listings
+          </a>
+          </NavItem>
+        )}
       </Nav>
     </>
   )
