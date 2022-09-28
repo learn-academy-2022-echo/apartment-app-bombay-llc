@@ -40,30 +40,30 @@ const Navigation = ({
         )}
         {logged_in && (
           <NavItem>
-            <a href="/apartmentshow" className="nav-link">
+            <NavLink to="/apartmentshow" className="nav-link">
               My Apartments
-            </a>
+            </NavLink>
           </NavItem>
         )}
         {logged_in && (
-            <NavItem>
-          <a href="/apartmentnew" className="nav-link">
+          <NavItem>
+            <NavLink to="/apartmentnew" className="nav-link">
             Add Property
-          </a>
+            </NavLink>
           </NavItem>
         )}
         {logged_in && (
-            <NavItem>
-          <a href="/apartmentindex" className="nav-link">
+          <NavItem>
+            <NavLink to="/apartmentindex" className="nav-link">
             All listings
-          </a>
+            </NavLink>
           </NavItem>
         )}
         {!logged_in && (
-            <NavItem>
-          <a href="/apartmentindex" className="nav-link">
+          <NavItem>
+            <NavLink to="/apartmentindex" className="nav-link">
             All Listings
-          </a>
+            </NavLink>
           </NavItem>
         )}
       </Nav>
