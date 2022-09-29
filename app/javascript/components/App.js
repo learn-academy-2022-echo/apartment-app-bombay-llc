@@ -12,7 +12,7 @@ import Home from "./pages/Home"
 import NotFound from "./pages/NotFound"
 
 const App = (props) => {
-  // const [apartments, setApartments] = useState([])
+  const [apartments, setApartments] = useState([])
 
   useEffect(() => {
     readApartments()
