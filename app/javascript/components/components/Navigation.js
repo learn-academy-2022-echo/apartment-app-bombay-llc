@@ -43,6 +43,9 @@ const Navigation = ({
             <NavLink to="/protectedapartmentindex" className="nav-link" >
               My Apartments
             </NavLink>
+            <NavLink to="/apartmentshow" className="nav-link">
+            <Button>My Apartments</Button>
+            </NavLink>
           </NavItem>
         )}
         {logged_in && (
