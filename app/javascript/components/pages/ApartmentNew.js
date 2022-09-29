@@ -37,7 +37,7 @@ const ApartmentNew = ( { createApartment }) => {
       <Form>
         <FormGroup>
           <Label for="street">Street</Label>
-          <Input type="text" street="street" placeholder='street' onChange={handleChange} value={newApartment.street} />
+          <Input type="text" name="street" placeholder='street' onChange={handleChange} value={newApartment.street} />
         </FormGroup>
 
         <FormGroup>
@@ -56,19 +56,19 @@ const ApartmentNew = ( { createApartment }) => {
         </FormGroup>
         <FormGroup>
           <Label for="email">email</Label>
-          <Input type="text" name="email" placeholder='email'onChange={handleChange} value={newApartment.email} />
+          <Input type="email" name="email" placeholder='email'onChange={handleChange} value={newApartment.email} />
         </FormGroup>
         <FormGroup>
           <Label for="price">price</Label>
-          <Input type="text" name="price" placeholder='price'onChange={handleChange} value={newApartment.price} />
+          <Input type="number" name="price" placeholder='price'onChange={handleChange} value={newApartment.price} />
         </FormGroup>
         <FormGroup>
           <Label for="bedrooms">bedrooms</Label>
-          <Input type="text" name="bedrooms" placeholder='bedrooms'onChange={handleChange} value={newApartment.bedrooms} />
+          <Input type="number" name="bedrooms" placeholder='bedrooms'onChange={handleChange} value={newApartment.bedrooms} />
         </FormGroup>
         <FormGroup>
           <Label for="bathrooms">bathrooms</Label>
-          <Input type="text" name="bathrooms" placeholder='bathrooms'onChange={handleChange} value={newApartment.bathrooms} />
+          <Input type="number" name="bathrooms" placeholder='bathrooms'onChange={handleChange} value={newApartment.bathrooms} />
         </FormGroup>
         <FormGroup>
           <Label for="pets">pets</Label>
