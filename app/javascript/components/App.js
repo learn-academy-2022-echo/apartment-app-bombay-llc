@@ -34,7 +34,7 @@ const App = (props) => {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/apartmentindex" element={<ApartmentIndex apartments={apartments} />} />
-        <Route path="/protectedapartmentindex/:id" element={<ProtectedApartmentIndex apartments={apartments} />} />
+        <Route path="/protectedapartmentindex" element={<ProtectedApartmentIndex apartments={apartments} {...props}/>} />
         <Route path="/apartmentshow" element={<ApartmentShow />} />
         <Route path="/apartmentnew" element={<ApartmentNew />} />
         <Route path="/apartmentedit" element={<ApartmentEdit />} />
