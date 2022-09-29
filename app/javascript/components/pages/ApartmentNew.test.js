@@ -1,10 +1,21 @@
 import React from "react"
-import { render } from "@testing-library/react"
+import {BrowserRouter} from "react-router-dom"
+import { screen, render } from "@testing-library/react"
 import ApartmentNew from "./ApartmentNew"
+import mockApartments from '../mockApartments'
+
+
+
 
 describe("<ApartmentNew />", () => {
-  it("renders without crashing", () => {
-    const div = document.createElement("div")
-    render(<ApartmentNew />, div)
+  test("renders without crashing", () => {
+    
+    render(
+      <BrowserRouter>
+              <ApartmentNew mockApartments={mockApartments}/>
+      </BrowserRouter>
+  )
+      expect(screen.getByText(/ApartmentNew/i)).toBeInTheDocument()
+
   })
 })
