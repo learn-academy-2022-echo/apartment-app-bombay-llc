@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import apartments from './mockApartments'
+// import apartments from './mockApartments'
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import ApartmentEdit from "./pages/ApartmentEdit"
