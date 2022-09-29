@@ -1,5 +1,4 @@
 user = User.where(email: 'test@example.com').first_or_create(password: 'password', password_confirmation: 'password')
-
 apartment_seeds = [
   {
     street: '4 Privet Drive',
