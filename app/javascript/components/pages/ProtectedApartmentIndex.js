@@ -23,9 +23,11 @@ return (
             <br/>{apartment.bedrooms} bedrooms
             <br/>{apartment.bathrooms} bathrooms
           </CardSubtitle>
-          <Button>
-            Visit Apartment
-          </Button>
+          <NavLink to={`/protectedapartmentshow/${apartment.user_id}/${apartment.id}`}>
+            <Button>
+              Visit Apartment
+            </Button>
+          </NavLink>
         </CardBody>
       </Card>
       )
